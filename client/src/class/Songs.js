@@ -1,7 +1,7 @@
 import React from "react";
 import SongForm from "./SongForm";
 
-class SongList extends React.Component{
+class Songs extends React.Component{
   constructor(props){
     super(props)
     // initial state
@@ -73,4 +73,4 @@ class SongList extends React.Component{
   }
 }
 
-export default SongList
+export default Songs
