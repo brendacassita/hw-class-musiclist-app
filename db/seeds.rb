@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Song.destroy_all
+
+Song.create(songname:'Come As You Are', artist:'Nirvana' )
+Song.create(songname:'Jammin', artist:'Bob Marley')
+Song.create(songname:'Youre Somebody else', artist:'Flora Cash')
+
+puts "SONGS: #{Song.all.count}"

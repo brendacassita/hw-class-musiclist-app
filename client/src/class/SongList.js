@@ -1,7 +1,7 @@
 import React from "react";
-import MusicForm from "./MusicForm";
+import SongForm from "./SongForm";
 
-class MusicList extends React.Component{
+class SongList extends React.Component{
   constructor(props){
     super(props)
     // initial state
@@ -65,12 +65,12 @@ class MusicList extends React.Component{
     return(
       <div>
         <button onClick={this.toggleForm}>{this.state.showForm ? 'hide' : 'show'}</button>
-        {this.state.showForm && <MusicForm addSong={this.addSong}/>}
-        <h1>Class Music List:</h1>
+        {this.state.showForm && <SongForm addSong={this.addSong}/>}
+        <h1>Class Song List:</h1>
         {this.renderSongs()}
       </div>
     )
   }
 }
 
-export default MusicList
+export default SongList

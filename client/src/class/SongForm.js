@@ -1,6 +1,6 @@
 import React from "react";
 
-class MusicForm extends React.Component{
+class SongForm extends React.Component{
   constructor(props){
     super(props)
     this.state={
@@ -39,7 +39,7 @@ class MusicForm extends React.Component{
   render(){
     return(
       <div className="border">
-        <h1>Music Form</h1>
+        <h1>Song Form</h1>
         <form onSubmit={this.handleSubmit}>
           <p>song name:</p>
           <input name='songname' value = {this.state.songname}onChange={this.handleChange}/>
@@ -52,4 +52,4 @@ class MusicForm extends React.Component{
   }
 }
 
-export default MusicForm
+export default SongForm
