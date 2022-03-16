@@ -39,11 +39,11 @@ class SongForm extends React.Component{
   render(){
     return(
       <div className="border">
-        <h1>Song Form</h1>
+        <h1>Class Song Form</h1>
         <form onSubmit={this.handleSubmit}>
-          <p>song name:</p>
+          <p>class song name:</p>
           <input name='songname' value = {this.state.songname}onChange={this.handleChange}/>
-          <p>artist:</p>
+          <p>class artist:</p>
           <input name='artist'value = {this.state.artist}onChange={this.handleChange}/>
           <button>add</button>
         </form>

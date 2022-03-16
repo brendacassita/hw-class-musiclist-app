@@ -1,12 +1,15 @@
-import SongForm from "../class/SongForm"
+import SongForm from "../functional/SongForm"
+
 const Song = (props) =>{
-  const{songname, id,updateSong} = props
+  const{songname, id, artist, deleteSong, addSong} = props
 
   return(
-    <div>
+    <div className="border">
   
-        <p>Song Name: {songname}</p>
-        <SongForm id={id} songname={songname} updateSong={updateSong}/>
+        <h2>♪ {songname} ♪</h2>
+        <p>🎤: {artist} </p>
+        <button onClick={()=>deleteSong(id)}>delete</button>
+        
       
     </div>
   )

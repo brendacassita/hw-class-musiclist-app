@@ -6,9 +6,12 @@ class Songs extends React.Component{
     super(props)
     // initial state
     this.state = {songs: [
-      {songname:'Come As You Are', artist:'Nirvana' },
-      {songname:'Jammin', artist:'Bob Marley' },
-      {songname:'Youre Somebody else', artist:'Flora Cash' },
+      {songname:'Come As You Are', artist:'Nirvana'},
+      {songname:'Jammin', artist:'Bob Marley'},
+      {songname:'Youre Sombody Else', artist:'Flora Cash'},
+      // {songname:'Somebody Else', artist:'The 1975'},
+      // {songname:'Its Never Enough', artist:'Audiodub'},
+
 
     ],
      showForm: true,
@@ -41,7 +44,7 @@ class Songs extends React.Component{
   renderSongs=()=>{
     return this.state.songs.map((song)=>{
       return(
-        <div className="border">
+        <div key={song.songname}className="border">
           <h2>♪ {song.songname} ♪</h2>
           <p> 🎤: {song.artist}</p>
           <button onClick={()=>this.deleteSong(song.songname)}>delete</button>
