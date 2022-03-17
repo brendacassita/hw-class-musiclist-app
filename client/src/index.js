@@ -15,9 +15,9 @@ ReactDOM.render(
   <Routes>
     <Route>
       <Route path='/' element={<App/>}/>
-      <Route path='/about' element={<About/>}/>
+      {/* <Route path='/about' element={<About/>}/>
       <Route path='/grid' element={<Grid />}/>
-      <Route path='/cardpage' element={<CardPage/>}/>
+      <Route path='/cardpage' element={<CardPage/>}/> */}
       
 
     </Route>
