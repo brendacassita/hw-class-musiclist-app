@@ -17,9 +17,9 @@ function App() {
       
       <h1> 🎧 Song List App 🎧</h1>
      <nav>
-    <Link to='/about'>About</Link> {'  '}
+    {/* <Link to='/about'>About</Link> {'  '}
     <Link to ='grid'>Grid Practice</Link> {'  '}
-    <Link to ='cardpage'>Card Practice</Link>
+    <Link to ='cardpage'>Card Practice</Link> */}
     </nav>
     
       <Container>
