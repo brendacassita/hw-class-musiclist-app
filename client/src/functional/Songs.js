@@ -11,7 +11,7 @@ import { PRIMARY_COLOR } from "../style/styles";
 const Songs = (props)=>{
   const{songname } = props
   const[songs, setSongs] =  useState([])
-  const [showForm, setShowForm] = useState(false)
+  const [showForm, setShowForm] = useState(true)
   useEffect(()=>{
     getSongs()
 }, [])

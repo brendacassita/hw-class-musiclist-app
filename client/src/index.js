@@ -3,11 +3,27 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import About from './pages/About';
+import Grid from './pages/Grid';
+import CardPage from './pages/CardPage';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+  <Routes>
+    <Route>
+      <Route path='/' element={<App/>}/>
+      <Route path='/about' element={<About/>}/>
+      <Route path='/grid' element={<Grid />}/>
+      <Route path='/cardpage' element={<CardPage/>}/>
+      
+
+    </Route>
+  </Routes>
+  </BrowserRouter>,
+   
   document.getElementById('root')
 );
 

@@ -1,18 +1,18 @@
 .border{
   padding:5px;
   margin:5px;
-  border:100px solid #FFB6C1
+  border:10px solid #FFB6C1
 }
 
 .border .border{
   padding:5px;
   margin:5px;
-  border:100px solid rgb(112, 216, 211)
+  border:7px solid rgb(112, 216, 211)
 }
 .border .border .border{
   padding:5px;
   margin:5px;
-  border:100px solid rgb(240, 241, 129)
+  border:7px solid rgb(240, 241, 129)
 }
 .border .border .border .border{
   padding:5px;
@@ -20,9 +20,9 @@
   border:3px solid rgb(231, 169, 250)
 }
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 h1 {
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -31,7 +31,8 @@ h1 {
   line-height: 46px;
 }
 h1:hover {
-  color: palevioletred
+  cursor:cell;
+  color: #FF69B4;
 }
 
 h2{
