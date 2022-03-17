@@ -2,8 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from 'axios'
 import Song from "./Song";
-import {useParams} from 'react-router-dom'
 import SongForm from "./SongForm";
+import Button from "../style/Button";
+import Container from "../style/Container";
+import { PRIMARY_COLOR } from "../style/styles";
 
 
 const Songs = (props)=>{
@@ -14,9 +16,9 @@ const Songs = (props)=>{
     getSongs()
 }, [])
 
-const addSong = async (song)=>{
+const addSong = async (songname)=>{
   try{
-    let res = await axios.post('/api/songs',song )
+    let res = await axios.post('/api/songs',songname )
     setSongs([res.data,...songs])
   }catch (err){
     alert('error occured in adding')
@@ -57,13 +59,15 @@ const deleteSong = async (id)=>{
 
 
   return(
-    <div>
-      <button onClick={()=>setShowForm(!showForm)}>{showForm ? 'hide' : 'show'} </button>
+    // <div className="App">
+      <div className="container" style ={{borderBlockColor: `${PRIMARY_COLOR}`}}>
+      <Button onClick={()=>setShowForm(!showForm)}>{showForm ? 'hide' : 'show'} </Button>
       {showForm && <SongForm songname={songname} addSong={addSong} />}
       <h1>Functional Song List:</h1>
         {renderSongs()}
       <p>{JSON.stringify(songs)}</p>
       </div>
+      // </div>
   )
 }
 export default Songs

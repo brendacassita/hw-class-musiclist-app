@@ -1,5 +1,6 @@
 import React from "react";
 import SongForm from "./SongForm";
+import Button from "../style/Button";
 
 class Songs extends React.Component{
   constructor(props){
@@ -9,8 +10,7 @@ class Songs extends React.Component{
       {songname:'Come As You Are', artist:'Nirvana'},
       {songname:'Jammin', artist:'Bob Marley'},
       {songname:'Youre Sombody Else', artist:'Flora Cash'},
-      // {songname:'Somebody Else', artist:'The 1975'},
-      // {songname:'Its Never Enough', artist:'Audiodub'},
+    
 
 
     ],
@@ -44,11 +44,12 @@ class Songs extends React.Component{
   renderSongs=()=>{
     return this.state.songs.map((song)=>{
       return(
+        <div className="App">
         <div key={song.songname}className="border">
           <h2>♪ {song.songname} ♪</h2>
           <p> 🎤: {song.artist}</p>
-          <button onClick={()=>this.deleteSong(song.songname)}>delete</button>
-        
+          <Button onClick={()=>this.deleteSong(song.songname)}>delete</Button>
+          </div>
         </div>
       )
     })
@@ -66,8 +67,8 @@ class Songs extends React.Component{
 
 
     return(
-      <div>
-        <button onClick={this.toggleForm}>{this.state.showForm ? 'hide' : 'show'}</button>
+      <div className="App">
+        <Button onClick={this.toggleForm}>{this.state.showForm ? 'hide' : 'show'}</Button>
         {this.state.showForm && <SongForm addSong={this.addSong}/>}
         <h1>Class Song List:</h1>
         {this.renderSongs()}

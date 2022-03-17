@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Button from "../style/Button";
 
 
 const SongForm = (props) =>{
@@ -27,7 +28,7 @@ const SongForm = (props) =>{
         <input value={songname} onChange={(e)=>setSongName(e.target.value)}/>
         <p>functional artist name: </p>
         <input value={artist} onChange={(e)=>setArtist(e.target.value)}/>
-      <button>add</button>
+      <Button>add</Button>
       </form>
     </div>
   )

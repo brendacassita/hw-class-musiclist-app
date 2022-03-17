@@ -6,8 +6,10 @@ import SongsB from './class/Songs';
 
 
 
+
 function App() {
   return (
+    <div className='App'>
     <div className='border'>
       <h1> 🎧 Song List App 🎧</h1>
 
@@ -18,6 +20,7 @@ function App() {
       <div className='border'>
        <SongsA header='Functional Song List'/>
       </div>
+    </div>
     </div>
 
   );

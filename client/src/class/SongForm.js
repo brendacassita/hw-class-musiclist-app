@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../style/Button";
 
 class SongForm extends React.Component{
   constructor(props){
@@ -45,7 +46,7 @@ class SongForm extends React.Component{
           <input name='songname' value = {this.state.songname}onChange={this.handleChange}/>
           <p>class artist:</p>
           <input name='artist'value = {this.state.artist}onChange={this.handleChange}/>
-          <button>add</button>
+          <Button>add</Button>
         </form>
       </div>
     )
