@@ -1,24 +1,61 @@
-# README
+# CREATE REACT MUSIC LIST APP USING CLASS COMPONENTS
+Create Rails Backend
+BONUS: Get set up in case I get there
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Create React Folders and Files
+### Functional Folder
+### Class Folder
+### Rails-BE Folder
+BONUS: Get files created in case I get there
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+### Functional (Hooks)
+```javascript
+// pass initial state to useState function
+// multiple states and setters
+const [state1, setState1 = useState(0)]
+const [state2, setState2 = useState('yo')]
 
-* Configuration
+// update state1
+...
+setState1(1)
+...
+```
 
-* Database creation
+### Class Component
+```javascript
+constructor(props){
+    super(props)
+    // initial state here
+    // one state object
+    this.state={
+        state1: 0,
+        state2: 'yo',
+    }
+}
 
-* Database initialization
+// update state1
+...
+this.setState({
+    state1:1
+})
+```
 
-* How to run the test suite
+# Style
+### Styled Components
+- Add styled components to project
+- Create own styled components
+- Add a hover and other pseduo selectors
+- Utilize flexbox
+- media query
+- Style Libraries
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Bootstrap
+- Add Bootstrap to app
+  - Table
+  - Card
+  - Grid
+  - Form
+- Chose own components from React Bootstrap
+- Have colors in separate file and import them
